@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#add {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add:hover {
+    background-color: #0056b3;
+}
+
+#todoList {
+    text-align: left;
+}
+
+.todo-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.todo-item:hover {
+    background-color: #f0f0f0;
+}
+
+.todo-item.line-through {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #wrapper {
+        width: 90%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #input {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    #add {
+        width: 100%;
+    }
+}
